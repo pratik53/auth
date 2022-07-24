@@ -57,6 +57,7 @@ class UserPasswordChangeView(APIView):
         sdata = UserChangePasswordSerializer(data=request.data,context = {'user':data})
         sdata.is_valid(raise_exception=True)
         sdata.save()
+        print('hello world')
         return Response(status = status.HTTP_200_OK)
 
         
