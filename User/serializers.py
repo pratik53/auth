@@ -47,6 +47,7 @@ class UserChangePasswordSerializer(serializers.ModelSerializer):
             raise serializers.ValidationError("Password does not match")
         user.set_password(password1)
         user.save()
+        print('hello world')
         return attrs
 
 
