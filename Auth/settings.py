@@ -40,7 +40,8 @@ INSTALLED_APPS = [
     'rest_framework',
     'rest_framework_simplejwt',
 
-    'User'
+    'User',
+    'Project'
 ]
 
 AUTH_USER_MODEL = 'User.MyUser'
@@ -81,8 +82,20 @@ WSGI_APPLICATION = 'Auth.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+       'NAME': 'postgres',
+       'USER': 'postgres',
+       'PASSWORD': '123',
+       'HOST': 'localhost',
+       'PORT': '5432',
+    },
+    'project': {
+        'ENGINE': 'django.db.backends.postgresql',
+       'NAME': 'Test1',
+       'USER': 'postgres',
+       'PASSWORD': '123',
+       'HOST': 'localhost',
+       'PORT': '5432',
     }
 }
 
