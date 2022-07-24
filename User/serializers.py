@@ -51,4 +51,3 @@ class UserChangePasswordSerializer(serializers.ModelSerializer):
         return attrs
 
 
-    
