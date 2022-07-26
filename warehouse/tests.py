@@ -12,5 +12,4 @@ class WarehouseTestCase(TestCase):
         name = Warehouse.objects.get(name = '1234567890')
         self.assertEqual(len(name.name),10)
         self.assertEqual(name.email,'prs')
-        print('hello world')
 
