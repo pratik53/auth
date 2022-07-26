@@ -41,7 +41,8 @@ INSTALLED_APPS = [
     'rest_framework_simplejwt',
 
     'User',
-    'Project'
+    'Project',
+    'warehouse'
 ]
 
 AUTH_USER_MODEL = 'User.MyUser'
